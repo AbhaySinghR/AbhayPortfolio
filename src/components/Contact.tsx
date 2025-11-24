@@ -4,8 +4,8 @@ import { useRef } from "react";
 import { Mail, Github, Linkedin, Twitter, Target, Award } from "lucide-react";
 
 const socials = [
-  { name: "Email", icon: Mail, href: "mailto:abhay@example.com", label: "abhay@example.com", color: "from-red-500 to-pink-500" },
-  { name: "GitHub", icon: Github, href: "https://github.com/abhay", label: "@abhay", color: "from-gray-500 to-gray-700" },
+  { name: "Email", icon: Mail, href: "mailto:abhaysaikap@gmail.com", label: "abhaysaikap@gmail.com", color: "from-red-500 to-pink-500" },
+  { name: "GitHub", icon: Github, href: "https://github.com/AbhaySinghR", label: "AbhaySingh", color: "from-gray-500 to-gray-700" },
   { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/in/abhay", label: "/in/abhay", color: "from-blue-500 to-blue-700" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com/abhay", label: "@abhay", color: "from-sky-500 to-blue-500" },
 ];
