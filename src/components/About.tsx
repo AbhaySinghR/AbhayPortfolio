@@ -46,13 +46,15 @@ export function About() {
           <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-8 backdrop-blur-sm">
             <div className="space-y-4 text-neutral-400 mb-8">
               <p>
-                I'm currently pursuing my Master's degree in Computer Science, where I'm diving deep 
-                into advanced topics like distributed systems, machine learning, and software architecture.
+                With over 5+ years of hands-on experience in full-stack data development, I have built a career on solving complex problems through scalable solutions. 
+                My professional journey is highlighted by my tenure as a Machine Learning Engineer at Maersk, a global shipping leader. There, I operated at the intersection of logistics and AI, deploying intelligent systems pivotal to modernizing global supply chain infrastructures
               </p>
               <p>
-                My journey in tech started with curiosity and has evolved into a passion for creating 
-                elegant solutions to complex problems. I believe in writing clean, maintainable code 
-                and staying updated with the latest industry trends.
+                Prior to this I worked as Data Engineer 2 for Microsoft as a contractor via MAQ Software, where I spearheaded projects that delivered enterprise-grade solutions essential to critical business operations.
+              </p>
+              <p>
+                This technical trajectory is supported by my Masters in Applied Data Science from Indiana University Bloomington,
+                where I specialized in Machine Learning Algorithms, Computer Vision and Deep Learning systems and solidified my expertise in Applied AI.
               </p>
               <p>
                 When I'm not coding, you can find me contributing to open-source projects, reading 

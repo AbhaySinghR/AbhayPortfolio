@@ -6,47 +6,45 @@ import { Github, ExternalLink, Sword, Star, Trophy } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management, payment integration, and admin dashboard.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    github: "#",
-    demo: "#",
+    title: "PoseNet: Pose Estimation for Primates using Vision Transformers",
+    description: "Primate Pose Estimation with Vision Transformers To address the challenges of occlusion and species variability in primate behavioral analysis, I engineered a robust pose estimation pipeline using the OpenApePose dataset. Moving beyond traditional CNN baselines (ResNet/ResNeXt), I implemented and fine-tuned a Vision Transformer (ViTPose+) architecture using PyTorch and Hugging Face. This approach optimized keypoint detection through heatmap supervision and transfer learning, ultimately achieving >93% accuracy (PCK@0.2) and significantly outperforming standard convolutional models in complex, non-invasive tracking scenarios.",
+    tech: ["Computer Vision", "PyTorch", "Hugging Face", "OpenApePose","MMPose","Python","Scikit-Learn"],
+    github: "https://github.com/AbhaySinghR/PoseNet-Ape-Pose-Detection",
+    demo: "https://github.com/AbhaySinghR/PoseNet-Ape-Pose-Detection",
     difficulty: "Epic",
     xp: 1500,
     status: "Completed",
   },
   {
     id: 2,
-    title: "AI-Powered Chatbot",
-    description: "Intelligent conversational agent using NLP and machine learning for customer support automation.",
-    tech: ["Python", "TensorFlow", "Flask", "React"],
-    github: "#",
-    demo: "#",
+    title: "ServiceNow: Idea Portal Evaluation AI Agent",
+    description: "InnovAIte is an advanced platform designed to streamline the process of innovation by empowering users to submit ideas and have them prioritized using artificial intelligence. The platform utilizes an AI agent powered by the ReAct (ReInnovAItection) framework to evaluate ideas based on Business Impact, Return on Investment (ROI), and Strategic Alignment. With a user-friendly frontend and a powerful backend, InnovAIte helps businesses maximize the value of customer-driven innovation while offering clear insights and tracking the development process through a PowerBI Analytics Dashboard.",
+    tech: ["Python", "Flask", "React","PandasAI","PowerBI","Streamlit","LangChain","OpenAI API","Random Forest"],
+    github: "https://github.com/suhaasbadada/4tokens",
     difficulty: "Legendary",
     xp: 2000,
     status: "Completed",
   },
   {
     id: 3,
-    title: "Task Management System",
-    description: "Collaborative project management tool with real-time updates, notifications, and team analytics.",
-    tech: ["Next.js", "PostgreSQL", "Prisma", "WebSocket"],
-    github: "#",
-    demo: "#",
+    title: "Advanced RAG Architecture: Naive vs. Graph Implementation",
+    description: "To optimize Large Language Model performance in document-based QA, I engineered a comparative analysis between a Naive RAG baseline and an advanced Graph RAG architecture. This project moved beyond simple vector retrieval by integrating knowledge graph structures to capture higher-order data relationships. I rigorously evaluated both implementations across four key metrics—Diversity, Comprehensiveness, Directness, and Global Context—demonstrating the distinct trade-offs between standard embedding-based search and structured, context-aware retrieval for complex information synthesis.",
+    tech: ["Python", "LangChain", "VectorDB", "Embeddings","Hugging Face","Groq","OpenAI API","Knowledge Graphs"],
+    github: "https://github.com/AbhaySinghR/AskDocsAI",
     difficulty: "Epic",
     xp: 1800,
     status: "Completed",
   },
   {
     id: 4,
-    title: "Data Visualization Dashboard",
-    description: "Interactive dashboard for analyzing large datasets with custom charts and real-time data streaming.",
-    tech: ["React", "D3.js", "Express", "Redis"],
-    github: "#",
+    title: "Indiana Toxicity Watch Platform",
+    description: "The Indiana Toxicity Watch platform is designed to empower citizens, policymakers, and researchers by providing a comprehensive, accessible, and interactive tool to monitor toxic chemicals, their geolocation, and the associated health risks in Indiana. This project integrates multiple data sources, offering visualizations, health risk analysis, and a web-based search tool to track environmental risks and enable informed decisions.",
+    tech: ["Flask", "PowerBI", "SQL", "Python","Machine Learning Algorithms","Data Visualization","Arc GIS", "LLMs","LangChain"],
+    github: "https://github.com/AbhaySinghR/Indiana-Toxicity-Watch",
     demo: "#",
     difficulty: "Epic",
     xp: 1600,
-    status: "In Progress",
+    status: "Completed",
   },
 ];
 
@@ -95,7 +93,7 @@ export function Projects() {
             >
               {/* Glow effect on hover */}
               <motion.div
-                className={`absolute inset-0 bg-gradient-to-br ${difficultyColors[project.difficulty]} opacity-0 group-hover:opacity-10 transition-opacity`}
+                className={`absolute inset-0 pointer-events-none bg-gradient-to-br ${difficultyColors[project.difficulty]} opacity-0 group-hover:opacity-10 transition-opacity`}
                 initial={false}
                 animate={{ opacity: hoveredId === project.id ? 0.1 : 0 }}
               />
@@ -130,6 +128,8 @@ export function Projects() {
                 <div className="flex gap-4">
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors"
                   >
                     <Github className="w-5 h-5" />
@@ -137,6 +137,8 @@ export function Projects() {
                   </a>
                   <a
                     href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors"
                   >
                     <ExternalLink className="w-5 h-5" />

@@ -1,35 +1,35 @@
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef, useState } from "react";
-import { Code2, Database, Cloud, Wrench, Zap } from "lucide-react";
+import { Code2, Database, Cloud, Wrench, Zap, Brain, BarChart } from "lucide-react";
 
 const techStack = [
   {
-    category: "Frontend",
+    category: "Data Engineering and Infrastructure",
     icon: Code2,
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"],
-    level: 85,
+    skills: ["Azure", "AWS", "GCP","Python", "SQL", "Databricks", "Airflow", "ETL Pipelines","PySpark","Snowflake","Kafka","Data Warehousing","Data Modeling","CI/CD","PowerBI","Tableau","Power Automate","Data Governance"],
+    level: 90,
     color: "from-blue-500 to-cyan-500",
   },
   {
-    category: "Backend",
-    icon: Database,
-    skills: ["Node.js", "Python", "Express", "Django", "PostgreSQL", "MongoDB"],
-    level: 90,
+    category: "AI Engineering and LLMs",
+    icon: Brain,
+    skills: ["RAG", "LLMs", "LangChain", "GPT-4", "VectorDBs","Python","Machine Learning Algorithms","Deep Learning","MCP","Vector Search","Computer Vision","NLP","Data Visualization"],
+    level: 75,
     color: "from-purple-500 to-pink-500",
   },
   {
-    category: "DevOps & Cloud",
-    icon: Cloud,
-    skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Git"],
-    level: 78,
+    category: "Data Science and Machine Learning",
+    icon: BarChart,
+    skills: ["Machine Learning", "Deep Learning", "Python", "R", "TensorFlow", "Scikit-Learn","Pandas","NumPy","Data Visualization","Statistical Analysis","Predictive Modeling","Computer Vision","NLP"],
+    level: 80,
     color: "from-orange-500 to-red-500",
   },
   {
-    category: "Tools & Others",
+    category: "DevOps and MLOps Tools",
     icon: Wrench,
-    skills: ["Linux", "REST APIs", "GraphQL", "Redis", "WebSocket"],
-    level: 82,
+    skills: ["Docker", "Kubernetes", "Terraform", "Git", "Jenkins","MLflow","CI/CD Pipelines","Monitoring","Version Control","Cloud Deployment"],
+    level: 70,
     color: "from-green-500 to-emerald-500",
   },
 ];

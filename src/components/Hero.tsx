@@ -64,8 +64,8 @@ export function Hero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-neutral-400 max-w-2xl"
           >
-            Master's student on a quest to build innovative solutions through code.
-            Join me as I navigate through the realms of full-stack development and explore new technologies.
+            Impact-Driven AI and Data Engineering Leader leveraging expertise from Maersk, Microsoft, and REN-ISAC to build scalable solutions. 
+            Currently channeling experience in advanced predictive modeling and high-performance data systems toward environmental justice (Indiana Toxicity Watch) and the AI-Powered Pediatric Brain Tumor Atlas research.
           </motion.p>
 
           {/* Stats display */}
@@ -76,15 +76,15 @@ export function Hero() {
             className="flex gap-6"
           >
             <div className="px-4 py-3 bg-neutral-900/50 border border-neutral-800 rounded-lg">
-              <div className="text-2xl text-white">20+</div>
+              <div className="text-2xl text-white">15+</div>
               <div className="text-neutral-500 text-sm">Projects</div>
             </div>
             <div className="px-4 py-3 bg-neutral-900/50 border border-neutral-800 rounded-lg">
-              <div className="text-2xl text-white">3+</div>
-              <div className="text-neutral-500 text-sm">Years XP</div>
+              <div className="text-2xl text-white">5+</div>
+              <div className="text-neutral-500 text-sm">Years of Experience</div>
             </div>
             <div className="px-4 py-3 bg-neutral-900/50 border border-neutral-800 rounded-lg">
-              <div className="text-2xl text-white">15+</div>
+              <div className="text-2xl text-white">20+</div>
               <div className="text-neutral-500 text-sm">Technologies</div>
             </div>
           </motion.div>
